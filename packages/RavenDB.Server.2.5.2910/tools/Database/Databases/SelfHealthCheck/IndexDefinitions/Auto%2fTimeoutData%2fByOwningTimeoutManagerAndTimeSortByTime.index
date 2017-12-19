@@ -1,0 +1,28 @@
+{
+  "Name": "Auto/TimeoutData/ByOwningTimeoutManagerAndTimeSortByTime",
+  "LockMode": "Unlock",
+  "Map": "from doc in docs.TimeoutData\r\nselect new { OwningTimeoutManager = doc.OwningTimeoutManager, Time = doc.Time }",
+  "Maps": [
+    "from doc in docs.TimeoutData\r\nselect new { OwningTimeoutManager = doc.OwningTimeoutManager, Time = doc.Time }"
+  ],
+  "Reduce": null,
+  "TransformResults": null,
+  "IsMapReduce": false,
+  "IsCompiled": false,
+  "Stores": {},
+  "Indexes": {},
+  "SortOptions": {
+    "Time": "String"
+  },
+  "Analyzers": {},
+  "Fields": [],
+  "Suggestions": {},
+  "TermVectors": {},
+  "SpatialIndexes": {},
+  "InternalFieldsMapping": {
+    "OwningTimeoutManager": "OwningTimeoutManager",
+    "Time": "Time"
+  },
+  "Type": "Auto",
+  "DisableInMemoryIndexing": false
+}

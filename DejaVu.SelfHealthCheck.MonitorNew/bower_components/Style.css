@@ -1,0 +1,23 @@
+﻿.alertify.error {
+    background: #dd4b39;
+    font-family: Arial;
+    font-size: medium;
+}
+
+.alertify.success {
+    background: #00a65a;
+    font-family: Arial;
+    font-size: medium;
+}
+
+.rediconcolor {
+    color: red;
+}
+
+.greeniconcolor {
+    color: green;
+}
+
+.yellowiconcolor {
+    color: #f39c12;
+}

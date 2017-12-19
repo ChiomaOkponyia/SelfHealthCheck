@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ServiceMonitor" Class="ServiceMonitorDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ODU;Initial Catalog=ServiceMonitor;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ServiceMonitorConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Component" Member="Components">
+    <Type Name="Component">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AppID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AppName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="HasSubComponents" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ParentComponentId" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

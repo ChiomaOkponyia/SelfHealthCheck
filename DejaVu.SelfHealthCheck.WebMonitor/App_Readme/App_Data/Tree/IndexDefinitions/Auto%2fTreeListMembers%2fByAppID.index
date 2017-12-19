@@ -1,0 +1,25 @@
+{
+  "Name": "Auto/TreeListMembers/ByAppID",
+  "LockMode": "Unlock",
+  "Map": "from doc in docs.TreeListMembers\r\nselect new { AppID = doc.AppID }",
+  "Maps": [
+    "from doc in docs.TreeListMembers\r\nselect new { AppID = doc.AppID }"
+  ],
+  "Reduce": null,
+  "TransformResults": null,
+  "IsMapReduce": false,
+  "IsCompiled": false,
+  "Stores": {},
+  "Indexes": {},
+  "SortOptions": {},
+  "Analyzers": {},
+  "Fields": [],
+  "Suggestions": {},
+  "TermVectors": {},
+  "SpatialIndexes": {},
+  "InternalFieldsMapping": {
+    "AppID": "AppID"
+  },
+  "Type": "Auto",
+  "DisableInMemoryIndexing": false
+}

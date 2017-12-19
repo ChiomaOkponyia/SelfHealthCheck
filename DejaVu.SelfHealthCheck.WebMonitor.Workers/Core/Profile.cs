@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DejaVu.SelfHealthCheck.WebMonitor.Workers.Core
+{
+    public class Profile: Entity,IProfile
+    {
+        public virtual string ProfileName{get; set;}
+        public virtual IList<Category> Categories { get; set; }
+    }
+}

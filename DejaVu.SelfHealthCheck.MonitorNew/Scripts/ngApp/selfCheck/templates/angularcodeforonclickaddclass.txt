@@ -1,0 +1,9 @@
+﻿-- in html
+ ng-class="{'on': selectedItem === item}" ng-click="selectItem( item )"
+
+ --in controller
+ $scope.SelectedItem = null;
+ $scope.selectItem = function(item) {
+        $scope.selectedItem = item;
+
+
